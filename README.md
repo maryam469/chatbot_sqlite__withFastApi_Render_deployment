@@ -46,17 +46,25 @@ langgraph-chatbot/
 └─ README.md
 
 2. Create virtual environment (recommended)
+
    python -m venv venv
    source venv/bin/activate   # Linux/Mac
    venv\Scripts\activate      # Windows
-3. Install dependencies
-4. Create a .env file:
+
+
+4. Install dependencies
+
+
+5. Create a .env file:
    GROQ_API_KEY=your_groq_api_key_here
    DATABASE_URL=your_postgres_url_here  
-5. Run FastAPI backend
+
+6. Run FastAPI backend
    uvicorn main:app --reload --port 8000
-6. Run Streamlit frontend
+
+7. Run Streamlit frontend
    streamlit run frontend_streamlit.py
+
 
 Usage
 
@@ -70,6 +78,8 @@ View AI responses: Assistant messages appear dynamically under user messages.
 
 Note: Previous chat threads are stored in session state; refreshing the page will clear them unless you implement a persistent backend for fetching old messages.
 
+
+
 Limitations
 
 Session-based storage means previous chat threads are not persistent across browser refresh.
@@ -77,6 +87,8 @@ Session-based storage means previous chat threads are not persistent across brow
 Backend returns only the latest AI response; full thread history retrieval requires backend changes.
 
 Groq API key is required for LLM responses.
+
+
 
 
 Optional Improvements
@@ -90,14 +102,17 @@ Display last message snippet in sidebar like WhatsApp.
 Add voice input/output using streamlit-webrtc.
 
 
+
 📜 License
 
 This project is MIT Licensed. Feel free to use and modify it for personal or commercial projects.
 
 
+
 👤 Author
 
 Maryam Faiz
+
 
 
 

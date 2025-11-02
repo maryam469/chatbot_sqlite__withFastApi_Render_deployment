@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain
+langchain-core
+langchain-groq
+langgraph>=0.1.0
+langgraph-checkpoint-sqlite>=0.1.0
+python-dotenv
+psycopg2-binary
+sqlalchemy
+streamlit
+requests

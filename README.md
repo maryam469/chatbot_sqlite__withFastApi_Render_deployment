@@ -38,11 +38,17 @@ A **full-stack AI chatbot** built using **LangGraph**, **Groq LLMs**, and **Fast
 
 ## 📦 Project Structure
 langgraph-chatbot/
+
 ├─ frontend_streamlit.py # Streamlit frontend
+
 ├─ main.py # FastAPI backend
+
 ├─ langgraph_database_backend.py # LangGraph setup, LLM, and database
+
 ├─ chatbot.db # SQLite database (if used)
+
 ├─ .env # Environment variables (GROQ_API_KEY, DATABASE_URL)
+
 └─ README.md
 
 2. Create virtual environment (recommended)
@@ -87,6 +93,7 @@ Session-based storage means previous chat threads are not persistent across brow
 Backend returns only the latest AI response; full thread history retrieval requires backend changes.
 
 Groq API key is required for LLM responses.
+
 
 
 
